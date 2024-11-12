@@ -9,8 +9,7 @@ pool:
 steps:
 - checkout: self
 - script: |
-    git remote add github https://github.com/mstretavsky/AOC.git
-    git fetch github
+    git fetch github main
     git merge github/main
     git push origin main
   displayName: 'Sync GitHub -> Azure DevOps'
