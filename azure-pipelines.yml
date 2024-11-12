@@ -14,3 +14,10 @@ steps:
     git merge github/main
     git push origin main
   displayName: 'Sync with GitHub'
+
+schedules:
+  - cron: "0 0 * * *"
+    displayName: Daily midnight sync
+    branches:
+      include:
+        - main
