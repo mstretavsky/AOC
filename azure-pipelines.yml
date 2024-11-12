@@ -13,7 +13,7 @@ steps:
     git fetch github
     git merge github/main
     git push origin main
-  displayName: 'Sync with GitHub'
+  displayName: 'Sync GitHub -> Azure DevOps'
 
 schedules:
   - cron: "0 0 * * *"
