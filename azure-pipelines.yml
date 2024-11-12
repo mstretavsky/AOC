@@ -11,7 +11,7 @@ steps:
 - script: |
     git fetch github main
     git merge github/main
-    git push origin main
+    git push main
   displayName: 'Sync GitHub -> Azure DevOps'
 
 schedules:
