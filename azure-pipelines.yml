@@ -14,10 +14,3 @@ steps:
     git merge github/main
     git push origin main
   displayName: 'Sync GitHub -> Azure DevOps'
-
-schedules:
-  - cron: "0 0 * * *"
-    displayName: Daily midnight sync
-    branches:
-      include:
-        - main
